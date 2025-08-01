@@ -1,0 +1,302 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1a1a1a;
+  color: #f8d7da;
+  line-height: 1.6;
+  transition: margin-left 0.3s ease;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #400000, #b30000, #ff4d4d);
+  padding: 25px 30px 25px 320px;
+  border-bottom: 3px solid #700000;
+  z-index: 1100;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+  font-size: 2.7rem;
+  color: #ffffff;
+  flex: 1 1 100%;
+  text-shadow: 1px 1px 5px #000000;
+}
+
+header h2 {
+  font-size: 1.2rem;
+  color: #ffc0cb;
+  flex: 1 1 100%;
+  font-weight: 400;
+}
+
+header img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffcccc;
+  box-shadow: 0 0 10px #ff9999aa;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 30px;
+  left: 20px;
+  width: 40px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1200;
+  background: transparent;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.menu-btn div {
+  height: 4px;
+  background-color: #000000;
+  border-radius: 3px;
+  transition: all 0.4s ease;
+}
+
+.menu-btn.open div:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+.menu-btn.open div:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.open div:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Menu lateral */
+.menu {
+  position: fixed;
+  top: 0;
+  left: -320px;
+  width: 300px;
+  height: 100vh;
+  background: linear-gradient(90deg, #400000, #b30000, #400000);
+  padding-top: 120px;
+  box-shadow: 2px 0 15px rgba(0,0,0,0.8);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  transition: left 0.35s ease;
+  z-index: 1050;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.menu.open {
+  left: 0;
+}
+
+.menu a {
+  color: #a0d8cc;
+  font-weight: 600;
+  font-size: 1.15rem;
+  text-decoration: none;
+  padding: 15px 35px;
+  border-left: 5px solid transparent;
+  transition: background-color 0.3s, border-left-color 0.3s, color 0.3s;
+  border-radius: 0 10px 10px 0;
+  box-shadow: inset 0 0 5px transparent;
+}
+
+.menu a:hover,
+.menu a.active {
+  background-color: #ff0000;
+  color: #102121;
+  border-left-color: #000000;
+  box-shadow: inset 5px 0 15px #00c896bb;
+}
+
+/* Ajusta conteúdo quando menu aberto */
+body.menu-open {
+  margin-left: 300px;
+}
+
+/* Conteúdo principal */
+main {
+  padding: 190px 40px 50px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+main h2 {
+  font-size: 2.2rem;
+  color: #ff4d4d;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 5px #990000;
+}
+
+/* Lista de Drogas */
+section {
+  background-color: #2a2a2a;
+  max-width: 600px;
+  margin: 0 auto 60px;
+  padding: 30px 35px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px #ff4d4d88;
+}
+
+section h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff9999;
+  border-bottom: 3px solid #ff4d4d;
+  padding-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+section h3:hover {
+  color: #ff4d4d;
+  border-color: #ff1a1a;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 12px;
+  margin: 10px 0;
+  background-color: #400000;
+  border-radius: 6px;
+  color: #ffe6e6;
+  font-size: 1.15rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+ul li:hover {
+  background-color: #ff6666;
+  color: #1a1a1a;
+}
+
+/* Descrição */
+.descricao {
+  background-color: #590000;
+  border-left: 6px solid #ff4d4d;
+  border-radius: 10px;
+  color: #ffecec;
+  margin-top: 20px;
+  padding: 20px;
+  box-shadow: 0 0 15px #ff4d4daa;
+}
+
+.descricao h4 {
+  color: #ffffff;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  text-shadow: 0 0 6px #ff9999;
+}
+
+.descricao button {
+  margin-top: 10px;
+  padding: 8px 14px;
+  background-color: #ff0000;
+  color: #102121;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.descricao button:hover {
+  background-color: #ff0055;
+}
+
+a.discord-link {
+  display: inline-block;
+  background-color: #7289da; /* cor típica do Discord */
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+a.discord-link:hover {
+  background-color: #5b6eae;
+  box-shadow: 0 6px 12px rgba(91, 110, 174, 0.8);
+}
+
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+  header {
+    padding-left: 25px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .menu {
+    width: 240px;
+  }
+
+  body.menu-open {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header h2 {
+    font-size: 1rem;
+  }
+
+  header img {
+    width: 60px;
+    height: 60px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  section h3 {
+    font-size: 1.6rem;
+  }
+
+  ul li {
+    font-size: 1rem;
+  }
+
+  .descricao {
+    font-size: 1rem;
+  }
+}

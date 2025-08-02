@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Drogas - Sintonia Ilegal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>SINTONIA ILEGAL</h1>
+    <h2>Bem-vindo à nossa plataforma de sintonia ilegal
+      <a href="https://discord.gg/UUQQCKc8" class="discord-link" target="_blank" rel="noopener noreferrer">
+       Junte-se ao nosso Discord
+      </a>
+    </h2>
+    <img src="img/kkkkk.png" alt="logo" />
+    
+
+    <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu" onclick="toggleMenu(this)">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+
+    <nav class="menu" id="menu" aria-hidden="true">
+      <a href="index.html">DROGA</a>
+      <a href="desmanche.html">DESMANCHE</a>
+      <a href="arma.html">ARMA</a>
+      <a href="muni.html">MUNI</a>
+      <a href="contrabando.html">CONTRABANDO</a>
+      <a href="lavagem.html">LAVAGEM</a>
+      <a href="index.html">Voltar</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>AQUI SÃO AS DROGAS</h2>
+
+    <section>
+      <h3 tabindex="0" role="button" aria-expanded="false" aria-controls="listaDrogas" onclick="toggleLista()">Lista de Drogas</h3>
+
+      <ul id="listaDrogas" style="display: none;">
+        <li tabindex="0" role="button" onclick="toggleDescricao('favela2')">FAVELA 2</li>
+        <li tabindex="0" role="button" onclick="toggleDescricao('favela3')">FAVELA 3</li>
+        <li tabindex="0" role="button" onclick="toggleDescricao('favela5')">FAVELA 5</li>
+        <li tabindex="0" role="button" onclick="toggleDescricao('favela7')">FAVELA 7</li>
+        <li tabindex="0" role="button" onclick="toggleDescricao('favela8')">FAVELA 8</li>
+        <li tabindex="0" role="button" onclick="toggleDescricao('favela9')">FAVELA 9</li>
+      </ul>
+
+      <div id="favela2" class="descricao" style="display: none;">
+      <h4>favela2</h4>
+      <p>Descrição: A maconha é uma planta psicoativa que contém THC, usada para fins recreativos e medicinais.</p>
+      <ul>
+          <li><strong>O que fabrica?</strong> COCAINA</li>
+          <li><strong>BAÚ LÍDER:</strong> 1588.07,-648.26,153.65,240.95</li>
+          <li><strong>BAÚ MEMBRO:</strong> 1588.07,-648.26,153.65,240.95</li>
+          <li><strong>CRAFTING:</strong> 1584.12,-648.89,153.65,90.71</li>
+          <li><strong>ROTA:</strong> 1588.4,-642.54,150.7,127.56</li>
+          <li><strong>GARAGEM:</strong> 1464.48,-788.29,113.25,0.0</li>
+          <li><strong>/painel:</strong> Favela2</li>
+        </ul>
+  
+        <p><strong>Status:</strong> <span id="status-drogas2" style="color: #28a745;">LIVRE</span></p>
+        <button onclick="trocarStatus('drogas2')" aria-label="Mudar status da drogas2">Mudar Status</button>
+      </div>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------->
+      <div id="favela3" class="descricao" style="display: none;">
+      <h4>favela3</h4>
+      <p>Descrição: A maconha é uma planta psicoativa que contém THC, usada para fins recreativos e medicinais.</p>
+      <ul>
+          <li><strong>O que fabrica?</strong> LSD</li>
+          <li><strong>BAÚ LÍDER:</strong> 1943.4,509.98,168.89,337.33</li>
+          <li><strong>BAÚ MEMBRO:</strong> 1945.11,507.2,165.53,277.8</li>
+          <li><strong>CRAFTING:</strong> 1943.75,504.0,168.89,252.29</li>
+          <li><strong>ROTA:</strong> 1946.97,507.17,165.53,266.46</li>
+          <li><strong>GARAGEM:</strong> 1984.61,506.75,169.49,110.56</li>
+          <li><strong>/painel:</strong> Favela3</li>
+        </ul>
+  
+        <p><strong>Status:</strong> <span id="status-favela1" style="color: #28a745;">LIVRE</span></p>
+        <button onclick="trocarStatus('favela1')" aria-label="Mudar status da favela1">Mudar Status</button>
+      </div>
+<!------------------------------------------------------------------------------------------------------------------------------------------->
+      <div id="favela5" class="descricao" style="display: none;">
+      <h4>favela5</h4>
+      <p>Descrição: A maconha é uma planta psicoativa que contém THC, usada para fins recreativos e medicinais.</p>
+      <ul>
+          <li><strong>O que fabrica?</strong> METAFETAMINA</li>
+          <li><strong>BAÚ LÍDER:</strong> -1815.04,-47.73,92.57,53.86</li>
+          <li><strong>BAÚ MEMBRO:</strong> -1811.78,-44.86,92.57,323.15</li>
+          <li><strong>CRAFTING:</strong> -1814.28,-47.48,95.86,260.79</li>
+          <li><strong>ROTA:</strong> -1817.97,-39.54,91.6,320.32</li>
+          <li><strong>GARAGEM:</strong> -1757.85,-126.85,85.66,280.63</li>
+          <li><strong>/painel:</strong> Favela5</li>
+        </ul>
+  
+        <p><strong>Status:</strong> <span id="status-favela1" style="color: #28a745;">LIVRE</span></p>
+        <button onclick="trocarStatus('favela1')" aria-label="Mudar status da favela1">Mudar Status</button>
+      </div>
+<!------------------------------------------------------------------------------------------------------------------------------------------->
+      <div id="favela6" class="descricao" style="display: none;">
+      <h4>favela6</h4>
+      <p>Descrição: A maconha é uma planta psicoativa que contém THC, usada para fins recreativos e medicinais.</p>
+      <ul>
+          <li><strong>O que fabrica?</strong> MACONHA</li>
+          <li><strong>BAÚ LÍDER:</strong> -1955.41,786.16,181.86,42.52</li>
+          <li><strong>BAÚ MEMBRO:</strong> -1951.5,788.08,181.86,300.48</li>
+          <li><strong>CRAFTING:</strong> -1954.65,786.11,185.15,246.62</li>
+          <li><strong>ROTA:</strong> -1955.09,793.94,181.81,28.35</li>
+          <li><strong>GARAGEM:</strong> -1881.34,784.84,164.03,25.52</li>
+          <li><strong>/painel:</strong> Favela6</li>
+        </ul>
+  
+        <p><strong>Status:</strong> <span id="status-favela6" style="color: #28a745;">LIVRE</span></p>
+        <button onclick="trocarStatus('favela6')" aria-label="Mudar status da favela6">Mudar Status</button>
+      </div>
+<!------------------------------------------------------------------------------------------------------------------------------------------->
+    <div id="favela7" class="descricao" style="display: none;">
+      <h4>favela7</h4>
+      <p>Descrição: A maconha é uma planta psicoativa que contém THC, usada para fins recreativos e medicinais.</p>
+      <ul>
+          <li><strong>O que fabrica?</strong> COCAINA</li>
+          <li><strong>BAÚ LÍDER:</strong> -1763.15,958.87,188.9,243.78</li>
+          <li><strong>BAÚ MEMBRO:</strong> -1764.42,952.78,188.9,147.41</li>
+          <li><strong>CRAFTING:</strong> -1762.54,954.56,188.9,232.45</li>
+          <li><strong>ROTA:</strong> -1759.8,963.46,185.95,110.56</li>
+          <li><strong>GARAGEM:</strong>  -1750.77,992.58,185.5,334.49</li>
+          <li><strong>/painel:</strong> Favela7</li>
+        </ul>
+
+        <p><strong>Status:</strong> <span id="status-favela7" style="color: #28a745;">LIVRE</span></p>
+        <button onclick="trocarStatus('favela7')" aria-label="Mudar status da favela7">Mudar Status</button>
+      </div>
+<!------------------------------------------------------------------------------------------------------------------------------------------->
+      <div id="favela8" class="descricao" style="display: none;">
+      <h4>favela8</h4>
+      <p>Descrição: A maconha é uma planta psicoativa que contém THC, usada para fins recreativos e medicinais.</p>
+      <ul>
+          <li><strong>O que fabrica?</strong> LSD</li>
+          <li><strong>BAÚ LÍDER:</strong> -802.04,-1803.41,28.98,235.28</li>
+          <li><strong>BAÚ MEMBRO:</strong> -804.71,-1805.51,28.98,65.2</li>
+          <li><strong>CRAFTING:</strong> -804.03,-1807.81,28.98,232.45</li>
+          <li><strong>ROTA:</strong> -806.67,-1808.83,28.71,164.41</li>
+          <li><strong>GARAGEM:</strong> -810.64,-1816.4,28.68,232.45</li>
+          <li><strong>/painel:</strong> Favela8</li>
+        </ul>
+  
+        <p><strong>Status:</strong> <span id="status-favela3" style="color: #28a745;">LIVRE</span></p>
+        <button onclick="trocarStatus('favela3')" aria-label="Mudar status da favela3">Mudar Status</button>
+      </div>
+<!------------------------------------------------------------------------------------------------------------------------------------------->
+      <div id="favela9" class="descricao" style="display: none;">
+      <h4>favela9</h4>
+      <p>Descrição: A maconha é uma planta psicoativa que contém THC, usada para fins recreativos e medicinais.</p>
+      <ul>
+          <li><strong>O que fabrica?</strong> METAFETAMINA</li>
+          <li><strong>BAÚ LÍDER:</strong> 2565.99,2434.95,46.02,153.08</li>
+          <li><strong>BAÚ MEMBRO:</strong> 2564.39,2437.93,46.02,334.49</li>
+          <li><strong>CRAFTING:</strong> 2562.11,2437.52,46.02,147.41</li>
+          <li><strong>ROTA:</strong> 2561.68,2440.73,45.73,53.86</li>
+          <li><strong>GARAGEM:</strong>  2553.66,2433.95,47.4,36.86</li>
+          <li><strong>/painel:</strong> Favela9</li>
+        </ul>
+
+        <p><strong>Status:</strong> <span id="status-favela3" style="color: #28a745;">LIVRE</span></p>
+        <button onclick="trocarStatus('favela3')" aria-label="Mudar status da favela3">Mudar Status</button>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

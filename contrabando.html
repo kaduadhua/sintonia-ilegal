@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Drogas - Sintonia Ilegal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>SINTONIA ILEGAL</h1>
+    <h2>Bem-vindo à nossa plataforma de sintonia ilegal
+      <a href="https://discord.gg/UUQQCKc8" class="discord-link" target="_blank" rel="noopener noreferrer">
+       Junte-se ao nosso Discord
+      </a>
+    </h2>
+    <img src="img/kkkkk.png" alt="logo" />
+    
+
+    <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu" onclick="toggleMenu(this)">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+
+    <nav class="menu" id="menu" aria-hidden="true">
+      <a href="index.html">DROGA</a>
+      <a href="desmanche.html">DESMANCHE</a>
+      <a href="arma.html">ARMA</a>
+      <a href="muni.html">MUNI</a>
+      <a href="contrabando.html">CONTRABANDO</a>
+      <a href="lavagem.html">LAVAGEM</a>
+      <a href="index.html">Voltar</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>AQUI SÃO AS DROGAS</h2>
+
+    <section>
+      <h3 tabindex="0" role="button" aria-expanded="false" aria-controls="listaContrabando" onclick="toggleLista()">Lista de Contrabando</h3>
+
+      <ul id="listaContrabando" style="display: none;">
+        <li tabindex="0" role="button" onclick="toggleDescricao('mafia3')">MAFIA 3</li>
+      </ul>
+
+      <div id="mafia3" class="descricao" style="display: none;">
+      <h4>MAFIA 3</h4>
+      <p>Descrição: A maconha é uma planta psicoativa que contém THC, usada para fins recreativos e medicinais.</p>
+      <ul>
+          <li><strong>O que fabrica?</strong> ARMA</li>
+          <li><strong>BAÚ LÍDER:</strong> 1228.5,-224.71,83.1,308.98</li>
+          <li><strong>BAÚ MEMBRO:</strong> 1229.64,-228.96,83.1,204.1</li>
+          <li><strong>CRAFTING:</strong> 1228.19,-225.46,86.39,127.56</li>
+          <li><strong>ROTA:</strong> 1231.71,-232.43,82.99,206.93</li>
+          <li><strong>GARAGEM:</strong> 1924.7, 700.61, 190.49, 201.26</li>
+          <li><strong>/painel:</strong> Drogas2</li>
+        </ul>
+
+        <p><strong>Status:</strong> <span id="status-mafia3" style="color: #28a745;">LIVRE</span></p>
+        <button onclick="trocarStatus('mafia3')" aria-label="Mudar status da mafia3">Mudar Status</button>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="contrabando.js"></script>
+</body>
+</html>

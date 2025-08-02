@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Drogas - Sintonia Ilegal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>SINTONIA ILEGAL</h1>
+    <h2>Bem-vindo à nossa plataforma de sintonia ilegal
+      <a href="https://discord.gg/UUQQCKc8" class="discord-link" target="_blank" rel="noopener noreferrer">
+       Junte-se ao nosso Discord
+      </a>
+    </h2>
+    <img src="img/kkkkk.png" alt="logo" />
+    
+
+    <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu" onclick="toggleMenu(this)">
+      <div></div>
+      <div></div>
+      <div></div>
+    </button>
+
+    <nav class="menu" id="menu" aria-hidden="true">
+      <a href="index.html">DROGA</a>
+      <a href="desmanche.html">DESMANCHE</a>
+      <a href="arma.html">ARMA</a>
+      <a href="muni.html">MUNI</a>
+      <a href="contrabando.html">CONTRABANDO</a>
+      <a href="lavagem.html">LAVAGEM</a>
+      <a href="index.html">Voltar</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>AQUI SÃO AS DROGAS</h2>
+
+    <section>
+      <h3 tabindex="0" role="button" aria-expanded="false" aria-controls="listaMuni" onclick="toggleLista()">Lista de MUNI</h3>
+
+      <ul id="listaMuni" style="display: none;">
+        <li tabindex="0" role="button" onclick="toggleDescricao('favela11')">FAVELA 11</li>
+        <li tabindex="0" role="button" onclick="toggleDescricao('favela14')">FAVELA 14</li>
+        <li tabindex="0" role="button" onclick="toggleDescricao('mafia2')">MAFIA 2</li>
+      </ul>
+
+      <div id="favela11" class="descricao" style="display: none;">
+      <h4>FAVELA 11</h4>
+      <p>Descrição: A maconha é uma planta psicoativa que contém THC, usada para fins recreativos e medicinais.</p>
+      <ul>
+          <li><strong>O que fabrica?</strong> ARMA</li>
+          <li><strong>BAÚ LÍDER:</strong> 1228.5,-224.71,83.1,308.98</li>
+          <li><strong>BAÚ MEMBRO:</strong> 1229.64,-228.96,83.1,204.1</li>
+          <li><strong>CRAFTING:</strong> 1228.19,-225.46,86.39,127.56</li>
+          <li><strong>ROTA:</strong> 1231.71,-232.43,82.99,206.93</li>
+          <li><strong>GARAGEM:</strong> 1924.7, 700.61, 190.49, 201.26</li>
+          <li><strong>/painel:</strong> Drogas2</li>
+        </ul>
+
+        <p><strong>Status:</strong> <span id="status-favela11" style="color: #28a745;">LIVRE</span></p>
+        <button onclick="trocarStatus('favela11')" aria-label="Mudar status da favela11">Mudar Status</button>
+      </div>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------->
+      <div id="favela14" class="descricao" style="display: none;">
+      <h4>FAVELA 14</h4>
+      <p>Descrição: A maconha é uma planta psicoativa que contém THC, usada para fins recreativos e medicinais.</p>
+      <ul>
+          <li><strong>O que fabrica?</strong> ARMA</li>
+          <li><strong>BAÚ LÍDER:</strong> 62.29,2605.03,86.91,198.43</li>
+          <li><strong>BAÚ MEMBRO:</strong> 58.0,2605.05,86.91,107.72</li>
+          <li><strong>CRAFTING:</strong> 61.92,2605.28,90.2,19.85</li>
+          <li><strong>ROTA:</strong> 57.06,2601.22,86.88,99.22</li>
+          <li><strong>GARAGEM:</strong> 1924.7, 700.61, 190.49, 201.26</li>
+          <li><strong>/painel:</strong> Drogas2</li>
+        </ul>
+
+        <p><strong>Status:</strong> <span id="status-favela14" style="color: #28a745;">LIVRE</span></p>
+        <button onclick="trocarStatus('favela14')" aria-label="Mudar status da favela14">Mudar Status</button>
+      </div>
+<!------------------------------------------------------------------------------------------------------------------------------------------->
+      <div id="mafia2" class="descricao" style="display: none;">
+      <h4>MAFIA 2</h4>
+      <p>Descrição: A maconha é uma planta psicoativa que contém THC, usada para fins recreativos e medicinais.</p>
+      <ul>
+          <li><strong>O que fabrica?</strong> MUNI</li>
+          <li><strong>BAÚ LÍDER:</strong> 62.29,2605.03,86.91,198.43</li>
+          <li><strong>BAÚ MEMBRO:</strong> 58.0,2605.05,86.91,107.72</li>
+          <li><strong>CRAFTING:</strong> 61.92,2605.28,90.2,19.85</li>
+          <li><strong>ROTA:</strong> 57.06,2601.22,86.88,99.22</li>
+          <li><strong>GARAGEM:</strong> 1924.7, 700.61, 190.49, 201.26</li>
+          <li><strong>/painel:</strong> Drogas2</li>
+        </ul>
+
+        <p><strong>Status:</strong> <span id="status-mafia2" style="color: #28a745;">LIVRE</span></p>
+        <button onclick="trocarStatus('mafia2')" aria-label="Mudar status da mafia2">Mudar Status</button>
+      </div>
+ 
+    </section>
+  </main>
+
+  <script src="muni.js"></script>
+</body>
+</html>
